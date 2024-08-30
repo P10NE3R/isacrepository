@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Semantisk nettside</title> 
     </head>
-
+<!--Her gis id topp, slik at man kan ta <a href="Topp"> Topp </a>-->
     <body>
-         <header>
-            <h1>Semantikk</h1>
+         <header id="Topp">
+            <a href="index.html "><h1>Semantikk</h1></a>
             <nav> 
                 <ul>
                     <li> 
@@ -17,12 +17,14 @@
                         <a href="index.html">Hjemside</a>
                     <li>
                         <a href="https://snl.no/semantikk" target="_blank">Smenatikk snl</a>
-                    </li>
+                    </li> <!--Her brukes target="-blank" for å åpne ny fane med lenka -->
                     <li>
                         <a href="https://no.wikipedia.org/wiki/Semantikk" target="_blank">Semantikk wikipedia</a>
                     </li>
-                    
-                </ul>
+                    <li> 
+                        <a href="#bunn">Bunn</a>
+                    </li> 
+                </ul> 
             </nav>
         </header>        
         
@@ -70,5 +72,11 @@
                 </ul>
             </nav>
         </aside> 
+    
+    
+    <footer id="bunn">
+        <h4>Isac all right reserved</h4>
+        <a href="#Topp">Topp</a>
+    </footer>
     </body>
 </html>
