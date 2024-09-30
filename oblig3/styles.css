@@ -1,5 +1,7 @@
 
+
 #topp {
+
     background-size: cover;
     background-image: url("athens.jpg");
     padding-bottom: 100px;
@@ -7,32 +9,42 @@
     color:white;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 0;
+    border-bottom: 0;
   }
   
+  body {
+   margin: 0px;
+  }
+
+  a {
+    color: black;
+   }
 
 
-
-  nav {
-    margin: 10px;
-    color:white;
+  #navbar {
+    background-color: darkgray;
     text-align: horisontal;
     width:100%;
     flex-wrap: wrap;
-  
+    margin-top: 0;
+    
   }
 
   
   ul {
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    display: flex;
     
   }
   
   li {
     float: left;
+    width: 20%;
+    
   }
   
   li a {
@@ -44,7 +56,8 @@
   
   li a:hover {
     background-color:black;
-    color: white;
+    color: wheat;
+    border-radius: 3%;
   }
 
 main {
