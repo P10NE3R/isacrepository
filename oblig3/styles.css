@@ -1,19 +1,19 @@
 
-header {
+#topp {
     background-size: cover;
     background-image: url("athens.jpg");
     padding-bottom: 100px;
-  }
-  
-
-h1 {
     padding-top:100px;
     color:white;
     text-align: center;
     text-transform: uppercase;
   }
+  
+
+
 
   nav {
+    margin: 10px;
     color:white;
     text-align: horisontal;
     width:100%;
@@ -21,7 +21,7 @@ h1 {
   
   }
 
-  f
+  
   ul {
     display: flex;
     list-style-type: none;
