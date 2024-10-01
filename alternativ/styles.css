@@ -1,0 +1,74 @@
+header {
+
+    background-size: cover;
+    background-image: url("pumkins.png");
+    
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 170%;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+  }
+  
+
+footer {
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.055);
+       }
+
+
+  body {
+    margin: 0;
+       
+       }
+  
+
+  
+main {
+    max-width: 100%;
+    min-width: 400px;
+   }
+ 
+
+
+#navigasjon {
+    width: 100%;
+    padding: 100px;
+    
+    
+    list-style: none;
+    flex-wrap: wrap;
+       }
+       
+       
+       
+ul {
+    list-style: none; /*Her fjernes liste punktene*/
+    text-decoration: none;
+    flex-wrap: wrap;        /*Her får jeg elementene til å pakke seg sammen når siden blir mindre*/
+    margin: 100px;
+
+    float: center;
+    display: flex; /*Her putter jeg listeelementene på en rekke*/
+    gap: 50px;
+    
+
+
+    margin: 0;
+       }
+
+
+li  {
+    text-decoration: none;
+    flex-wrap: wrap;
+       }
+
+
+li a {
+        text-decoration: none;
+        color: black;
+           }
+    
