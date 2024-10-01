@@ -1,74 +1,120 @@
 header {
 
-    background-size: cover;
-    background-image: url("pumkins.png");
-    
-    color:white;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 170%;
-    
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-bottom: 0px;
-  }
-  
-
-footer {
-    width: 100%;
-    background-color: rgba(169, 169, 169, 0.055);
-       }
-
-
-  body {
-    margin: 0;
-       
-       }
-  
-
-  
-main {
-    max-width: 100%;
-    min-width: 400px;
-   }
+   background-size: cover;
+   background-image: url("pumkins.png");
+   
+   color:white;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 170%;
+   
+   padding-top: 100px;
+   padding-bottom: 100px;
+   margin-bottom: 0px;
+ }
  
 
-
-#navigasjon {
-    width: 100%;
-    padding: 100px;
-    
-    
-    list-style: none;
-    flex-wrap: wrap;
-       }
-       
-       
-       
-ul {
-    list-style: none; /*Her fjernes liste punktene*/
-    text-decoration: none;
-    flex-wrap: wrap;        /*Her får jeg elementene til å pakke seg sammen når siden blir mindre*/
-    margin: 100px;
-
-    float: center;
-    display: flex; /*Her putter jeg listeelementene på en rekke*/
-    gap: 50px;
-    
+footer {
+   width: 100%;
+   background-color: black;
+   color: white;
+      }
 
 
-    margin: 0;
-       }
+ body {
+   margin: 0;
+      
+      }
+ 
+
+ 
+main {
+   max-width: 100%;
+   min-width: 400px;
+   flex-basis: 350px;
+  }
+
+  
+section {
+     margin: 0;
+     display: flex; 
+     gap: 20%;
+     flex-wrap: wrap;
+        }
+
+
+section h2 {
+     box-sizing: border-box;
+     width: 100%;
+
+        }
+
+#aside_under_section{
+
+}
+
+aside {
+   min-width: 350px;
+   width: 30%;
+   flex-direction: column;
+   position: right;
+   
+   
+      }
+
+aside section {
+  min-width: 350px;
+  width: 30%;
+
+  
+  
+     }    
+
+#side_list a {
+  min-width: 350px;
+  width: 30%;
+   text-decoration: none;
+   color:black
+
+  
+        
+        
+        
+}     
+
+
+      
+#navigasjon_list{
+   list-style: none; /*Her fjernes liste punktene*/
+   text-decoration: none;
+   flex-wrap: wrap;        /*Her får jeg elementene til å pakke seg sammen når siden blir mindre*/
+   margin: 100px;
+   gap: 50px;
+   padding: 100px;
+   width: 100%;
+
+   float: center;
+   display: flex; /*Her putter jeg listeelementene på en rekke*/
+ 
+   list-style: none;
+   box-sizing:border-box;
+   
+   margin: 0;
+
+   
+      }
+#navigasjon_list a {
+  color: black;
+          }
 
 
 li  {
-    text-decoration: none;
-    flex-wrap: wrap;
-       }
+   text-decoration: none;
+   flex-wrap: wrap;
+      }
 
 
 li a {
-        text-decoration: none;
-        color: black;
-           }
-    
+  text-decoration: none;
+          }
+   
