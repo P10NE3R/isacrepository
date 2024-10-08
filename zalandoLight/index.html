@@ -14,8 +14,8 @@
 </head>
 <body>
     <!-- Starter hovedinnholdet på siden -->
-    <div id="grid_contianer">
-        <header>
+    <div id="grid-container">
+        <header id="global-header">
             <!-- Definerer toppinnholdet på siden, typisk for logo og navigasjon -->
             <img id="main-logo" src="img/Zalando-Logo.png" alt="Nettsted logo">
             <!-- Viser nettstedets logo. "alt" brukes som alternativ tekst hvis bildet ikke lastes inn, eller for skjermlesere -->
@@ -49,12 +49,13 @@
         </header>
         <main>
             <!-- Definerer hovedinnholdet på siden -->
-            <section>
+            <section id="banner">
                 <!-- Definerer en seksjon for spesifikke innholdstyper, her brukt for de beste tilbudene -->
-                <h2>Våre beste deals</h2>
-                <!-- Overskrift for seksjonen -->
-                <a href="#">Shop nå -></a>
-                <!-- En lenke som oppfordrer brukeren til å handle nå -->
+                <div>
+                    <!-- Overskrift for seksjonen -->
+                    <a href="#">Shop nå -></a>
+                    <!-- En lenke som oppfordrer brukeren til å handle nå -->
+                </div>
                 <img src="img/powerup.webp" alt="Våre beste deals">
                 <!-- Et bilde som illustrerer de beste tilbudene -->
             </section>
