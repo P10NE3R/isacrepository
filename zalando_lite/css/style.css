@@ -1,19 +1,33 @@
 html {
-    font-size: 18px; /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
+    font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
 }
 
 * {
     box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde og høyde */
+    
 }
+
+
+
+
 
 body {
     font-family: Arial, Helvetica, sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
+    padding: 0.8rem;
 }
+
+
+h1 {font-size: 2rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.4rem;}
+p,a {font-size: 1rem;}
 
 #grid-container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows:repeat(3, auto) ; 
+    
  /* 3 linjer derfor må jeg skrive auto 3 ganger */
 }
 
@@ -28,18 +42,17 @@ body {
     display:flex;
     flex-wrap: wrap;
     background-color: #efefef;
+    justify-content: space-between;
 
     img{
         max-width: 70%; 
     }
 
-    a{
-        padding: 0.5rem;
+    h2{
+        font-size: 1rem;
     }
 
-    div{
-        
-    }
+
 }
 
 
@@ -82,6 +95,54 @@ main nav ul {
     list-style: none;
 }
 
+/*DESKTOP*/
+@media only schree and (min-width: 800px) {
+    .fa-burger {
+        display: none;
+    }
+    #menu {display: flex !important;}
+    h3{font-size: 1.2rem;}
+    p, a {font-size: 0.6rem;}
+   
+}
+
+
+/*MOBIL*/
+@media only screen and (max-width: 800px) {
+    #menu {
+        display: none; /* Skjuler hovedmenyen på mindre skjermer */
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr; /* Endrer layout til én kolonne på mobil */
+        grid-template-rows: auto auto auto auto; /* Setter fire rader for responsiv oppsett */
+    }
+
+    header, main, aside, footer {
+        grid-column: 1/2; /* Sørger for at alle elementer strekker seg over hele bredden på mindre skjermer */
+    }
+
+    header {
+        grid-row: 1/2; /* Plasserer headeren øverst på siden */
+    }
+    
+    main {
+        grid-row: 2/3; /* Plasserer hovedinnholdet i andre rad */
+    }
+    
+    aside {
+        display: none; /* Skjuler sideinnholdet (aside) på mindre skjermer */
+    }
+    
+    footer {
+        grid-row: 3/4; /* Plasserer fotnoten nederst på siden */
+    }
+}
+
+
+
+h3{font-size: 1.2rem;}
+p, a {font-size: 0.6;}
 
 
 
