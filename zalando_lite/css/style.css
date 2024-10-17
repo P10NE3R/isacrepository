@@ -96,7 +96,7 @@ main nav ul {
 }
 
 /*DESKTOP*/
-@media only schree and (min-width: 800px) {
+@media only schreen and (min-width: 800px) {
     .fa-burger {
         display: none;
     }

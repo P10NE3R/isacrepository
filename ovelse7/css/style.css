@@ -10,16 +10,23 @@ body {
 }
 
 
+li a{
+    color: black;
+    text-decoration: none;
+   }
+
+
+
 header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(203, 203, 203);
+    background-color: rgb(227, 227, 227);
     
    
     ul{
         list-style: none;
-        padding:0;
+        padding:0.25rem;
         border: 0;
         margin: 0;
         
@@ -27,50 +34,110 @@ header {
         justify-content: center;
     }
 
-    
 
+    ul li{
+        padding:0.25rem;
+
+    }
+    section{
+        padding:2rem;
+    }
 }
 
 
 nav{
    text-align: center;
    background-color: rgb(181, 181, 181);
+   padding-top: 1rem;
+   padding-bottom:1rem;
 }
 
 
-li a{
-    color: black;
-    text-decoration: none;
-    text-decoration: none;
-    
-   }
+
+
+.under{
+    padding:2rem;
+    background-color: rgba(32,70,107,255);
+    color: white;
+
+    a{
+        color:white;
+    }
+}
 
 
 
+#order{
+    width:100%;
+}
 
+img{
+    max-width: 100%; 
+}
    a {text-decoration: none;
     color: black;}
 
 
 
 
-section{
-    padding: 2rem;
+
+
+figure{
+    width: 100%;
+    padding:0;
+    border: 0;
+    margin:0;
+    
+    img{
+        width: 100%;
+        
+    }
 }
 
 
 
 
+#tjenester{
+    padding:3rem;
+
+    article{
+        background-color: rgb(227, 227, 227);
+        padding:2rem;
+        margin-bottom: 2rem;
+    }
+
+
+
+#booking {
+        background-color:  rgba(32,70,107,255);
+        color: white;
+    
+        p{
+            
+            
+        }
+        a {
+            color: white;
+            
+        }
+    }
+}
+
+
+
 footer  {
-
-
-
-
+    background-color:gray ;
+    color: white;
+    padding:2rem;
+    
+    a{
+        color: white;
+    }
     ul{
         list-style: none;
-        
     }
-    li {
-        gap: 1rem;
+    
+    ul li{
+        padding:0.5rem;
     }
 }
