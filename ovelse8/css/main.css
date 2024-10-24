@@ -1,0 +1,25 @@
+#container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+#head-picture img {
+  border-radius: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 1/2;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2/3;
+  background-image: url("photos/can.jpg");
+}
+
+main {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 3/4;
+}/*# sourceMappingURL=main.css.map */
